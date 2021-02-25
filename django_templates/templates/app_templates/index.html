@@ -3,4 +3,9 @@
   {% block body_block %}
     <h1>Home</h1>
     <h2>This is index.html</h2>
+    <h2>Template filters examples below:</h2>
+    <h3>{{ text|upper }}</h3>
+    <h3>{{ number|add:"99" }}</h3>
+    <h3>{{ text_2|cut:"CUT" }}</h3>
+
   {% endblock %}
