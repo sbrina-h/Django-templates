@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 {% extends "app_templates/base.html" %}
+{% load static %}
   {% block body_block %}
+  <link rel="stylesheet" href="{% static "css/style.css" %}"/>
     <h1>Just another page</h1>
+    <h2>Here is a staticfile image:</h2>
+    <img src="{% static "images/my_dog.jpg" %}" alt="">
   {% endblock %}
